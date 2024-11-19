@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Cabecera fija en la parte superior */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; /* Tamaño proporcional */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #87CEFA;
+}
+
+/* Logo como botón de inicio */
+#imagen_sonido {
+    height: 50px;  /* Ajusta al tamaño proporcional de la ventana */
+    width: auto;
+}
+
+
+
+/* Banner principal */
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sección de artículos */
+#articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content1, .content2 {
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-bottom: 20px;
+    text-align: center; /* Centrando los títulos */
+}
+
+.content1 h2, .content2 h3 {
+    text-align: center;
+}
+
+.content1 img, .content2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Sección de recursos */
+#recursos {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#recursos ul {
+    padding-left: 20px;
+}
+
+#recursos li {
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-content h3 {
+    margin-top: 0;
+}
+
+.footer-content a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.map iframe {
+    width: 100%; /* Ajustando el tamaño */
+    height: 250px; /* Reduciendo la altura */
+    border-radius: 8px; /* Opcional, para esquinas redondeadas */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner {
+        height: 250px;
+    }
+
+    #articulos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content1, .content2 {
+        flex: 1 1 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px; /* Ajuste de altura para pantallas más pequeñas */
+    }
+}

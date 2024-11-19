@@ -1,0 +1,418 @@
+/* Reseteo de márgenes, relleno y box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Cabecera fija en la parte superior */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; /* Tamaño proporcional */
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #87CEFA;
+}
+
+/* Logo como botón de inicio */
+#imagen_sonido {
+    height: 50px;  /* Ajusta al tamaño proporcional de la ventana */
+    width: auto;
+}
+
+/* Configuración del banner */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 400px;  /* Relativo al ancho de la ventana */
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5vw 8vw;  /* Usando unidades vw para las proporciones */
+    border-radius: 8px;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.banner-content p {
+    font-size: 1.5vw;  /* Tamaño proporcional */
+    color: #ffffff;
+}
+
+/* Botones bajo el banner */
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    background: #1c1c1c;
+}
+
+.banner-buttons .button {
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    color: #87CEFA;
+    background-color: #1c1c11;
+    padding: 1.5vw 3vw;  /* Proporción para los botones */
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.banner-buttons .button:hover {
+    background-color: #87CEFA;
+    color: #f8f8f8;
+}
+
+/* Galería de Proyectos */
+#Galería-de-Proyectos {
+    padding: 6vw 2vw;
+    text-align: center;
+}
+
+.gp-cards {
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    padding: 4vw;
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Convenios */
+#convenios {
+    padding: 6vw 2vw;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#convenios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#convenios li {
+    font-size: 2vw;  /* Usando vw para mantener proporcionalidad */
+    font-weight: bold;
+    margin: 1.5vw 0;
+}
+
+/* Footer */
+#contacto {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    padding: 0vw 0vw;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    height: 272.400px;
+    width: auto;
+}
+
+.social-media, img {
+    height: 5vw;  /* Ajusta la altura en proporción al tamaño de la pantalla */
+}
+
+.contact-info, .social-media, .map {
+    width: 30%;
+}
+
+.map iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilo de la imagen en la galería de proyectos */
+.imagen-proyecto {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    display: block;
+    font-size: 1.5em;  /* Tamaño proporcional en función del ancho de la ventana */
+    margin: 0.83em 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw;
+    background-color: transparent;
+    border-radius: 24px;
+    color: #4285F4;
+    text-decoration: underline;
+    border: 0px solid #dcdcdc;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el encabezado h2 */
+h2 {
+    display: block;
+    font-size: 1.5em;  /* Tamaño proporcional en función de la ventana */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40vw;  /* Relativo al tamaño de la ventana */
+    background-image: url(../images/imagen-ejemplo-gp.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del texto dentro del banner */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    padding: 5vw 8vw;
+    border-radius: 8px;
+    box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid #f0f0f0;
+}
+
+/* Estilos para el título h1 (igual que el p) */
+.banner-text h1 {
+    font-size: 1.5em;
+    margin: 0 0;
+    border: 1px solid #f0f0f0af;
+    background-color: transparent;
+    color: #f0f0f0;
+    text-align: center;
+    box-shadow: 4px 8px 20px rgba(255, 255, 255, 0.2), 0 4px 15px rgba(255, 255, 255, 0.15);
+    text-decoration: underline;
+}
+
+/* Estilos para el párrafo p */
+.banner-text p {
+    font-size: 1em;
+    margin: 0 0;
+    background-color: transparent;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 1vw;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de búsqueda */
+.Buscar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 1vw 1vw;
+    background-color: #4285F4;
+    border-radius: 0px;
+    width: 100%;
+    max-width: 1520px;
+    height: 8vw; /* Proporcional */
+}
+
+.fecha {
+    font-size: 1em;
+    padding: 1vw;
+    font-weight: bold;
+    text-align: center;
+    color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+}
+
+/* Estilos para el campo de búsqueda */
+.Buscar input {
+    width: 0%;
+    padding: 1vw;
+    font-size: 1.17em;
+    border-radius: 0px;
+    border: 1px solid #33333300;
+    outline: none;
+    transition: border 0.5s ease, background-color 0.5s ease;
+    box-sizing: border-box;
+    margin-left: 1vw;
+}
+
+.Buscar input:focus {
+    border-color: #4286f400;
+    background-color: #1c1c1c00;
+}
+
+/* Estilos para los botones (de búsqueda y otros) */
+.Buscar button,
+.Buscar a {
+    display: inline-flex;
+    font-size: 1.17em;
+    margin: 1vw 0px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw;
+    background-color: #1c1c1c00;
+    border-radius: 0px;
+    color: #1c1c1c;
+    text-decoration: none;
+    border: 1.5px solid #1c1c1c00;
+    cursor: pointer;
+    width: fit-content;
+    transition: transform 0.3s;
+}
+
+.Buscar button:hover,
+.Buscar a:hover {
+    background-color: #1c1c1c00;
+    border-color: #4286f400;
+    text-decoration: none;
+    color: #1c1c1c;
+    transform: scale(1.05);
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    font-size: 1em;
+}
+
+.boton-navegacion {
+    background-color: transparent;
+    padding: 1vw;
+    font-size: 1.17em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1c1c1c;
+    background-color: #4285F4;
+    border-color: #4285F4;
+}
+
+.arrow {
+    margin-left: 1vw;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .boton-navegacion .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-content {
+    display: none;
+    white-space: nowrap;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background-color: #4285F4;
+    margin-right: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #4285F4;
+}
+
+.toggle-checkbox:checked + .boton-navegacion + .dropdown-content {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

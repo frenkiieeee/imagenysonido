@@ -1,0 +1,70 @@
+/* Estilo General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Cabecera fija en la parte superior */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #87CEFA;
+}
+
+/* Logo como botón de inicio */
+#imagen_sonido {
+    height: 50px;
+}
+
+/* Footer */
+#contacto {
+    background-color: #1c1c1c;
+    color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info, .social-media, .map {
+    width: 30%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+}
